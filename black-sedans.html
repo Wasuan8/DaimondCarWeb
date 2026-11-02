@@ -1016,6 +1016,212 @@
     .social-icons a[aria-label="TikTok"]:hover { background: #000000 !important; color: #FFFFFF !important; border: 1px solid rgba(255,255,255,0.3); }
     .social-icons a[aria-label="Yelp"]:hover { background: #D32323 !important; color: #FFFFFF !important; }
 
+  
+    /* ===== COMPREHENSIVE RESPONSIVE & MOBILE NAV STYLING ===== */
+    @media (max-width: 900px) {
+      .nav-container {
+        position: relative !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+      }
+
+      .mobile-menu {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 44px !important;
+        height: 44px !important;
+        font-size: 1.5rem !important;
+        cursor: pointer !important;
+        color: var(--diamond-gold) !important;
+        background: rgba(197, 160, 34, 0.1) !important;
+        border: 1px solid var(--diamond-gold) !important;
+        border-radius: 10px !important;
+        padding: 0 !important;
+        transition: all 0.25s ease !important;
+        z-index: 1002 !important;
+      }
+
+      .mobile-menu:hover,
+      .mobile-menu.active {
+        background: var(--diamond-gold) !important;
+        color: #0F172A !important;
+      }
+
+      .nav-links {
+        display: none !important;
+        width: 100% !important;
+        flex-direction: column !important;
+        text-align: left !important;
+        padding: 16px 0 !important;
+        gap: 0 !important;
+        max-height: calc(100vh - 110px) !important;
+        overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch;
+        background: #0F172A !important;
+        margin-top: 14px !important;
+        border-radius: 16px !important;
+        border: 1px solid rgba(197, 160, 34, 0.35) !important;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6) !important;
+      }
+
+      .nav-links.show {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+      }
+
+      .nav-links > li,
+      .nav-links li {
+        width: 100% !important;
+        display: block !important;
+      }
+
+      .nav-links > li > a,
+      .nav-links li > a,
+      .nav-links > a {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        padding: 14px 20px !important;
+        color: #F8FAFC !important;
+        font-size: 1rem !important;
+        font-weight: 500 !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+        text-decoration: none !important;
+        transition: all 0.2s ease !important;
+      }
+
+      .nav-links > li > a:hover,
+      .nav-links > li.active-mobile > a {
+        color: var(--diamond-gold) !important;
+        background: rgba(197, 160, 34, 0.08) !important;
+      }
+
+      .nav-links .has-submenu {
+        width: 100% !important;
+      }
+
+      .nav-links .has-submenu > a {
+        cursor: pointer !important;
+      }
+
+      .nav-links .has-submenu > a::after {
+        content: '\f107' !important;
+        font-family: 'Font Awesome 6 Free' !important;
+        font-weight: 900 !important;
+        font-size: 0.9rem !important;
+        transition: transform 0.3s ease !important;
+        color: var(--diamond-gold) !important;
+        margin-left: auto !important;
+      }
+
+      .nav-links .has-submenu.active-mobile > a::after {
+        transform: rotate(180deg) !important;
+      }
+
+      .nav-links .submenu {
+        position: static !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+        background: #141E33 !important;
+        border: none !important;
+        border-left: 3px solid var(--diamond-gold) !important;
+        border-radius: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+        max-height: 0 !important;
+        overflow: hidden !important;
+        transition: max-height 0.35s ease, padding 0.35s ease !important;
+        min-width: 100% !important;
+        list-style: none !important;
+      }
+
+      .nav-links .submenu.show-mobile,
+      .nav-links .has-submenu.active-mobile > .submenu {
+        max-height: 600px !important;
+        padding: 6px 0 !important;
+      }
+
+      .nav-links .submenu::before,
+      .nav-links .submenu::after {
+        display: none !important;
+      }
+
+      .nav-links .submenu li {
+        display: block !important;
+        width: 100% !important;
+      }
+
+      .nav-links .submenu li a {
+        padding: 12px 20px 12px 36px !important;
+        white-space: normal !important;
+        color: #CBD5E1 !important;
+        font-size: 0.92rem !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04) !important;
+        display: block !important;
+      }
+
+      .nav-links .submenu li a:hover {
+        color: var(--diamond-gold) !important;
+        background: rgba(197, 160, 34, 0.12) !important;
+        padding-left: 42px !important;
+      }
+
+      .nav-links a[href^="tel:"] {
+        margin: 16px 20px 8px !important;
+        text-align: center !important;
+        display: flex !important;
+        justify-content: center !important;
+        padding: 12px 20px !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo img {
+        height: 65px !important;
+      }
+
+      .navbar {
+        padding: 10px 0 !important;
+      }
+
+      .mobile-menu {
+        width: 40px !important;
+        height: 40px !important;
+        font-size: 1.3rem !important;
+      }
+
+      .container {
+        padding: 0 16px !important;
+      }
+
+      .hero h1,
+      h1 {
+        font-size: 2rem !important;
+        line-height: 1.25 !important;
+      }
+
+      .hero-buttons {
+        flex-direction: column !important;
+        width: 100% !important;
+      }
+
+      .hero-buttons .btn {
+        width: 100% !important;
+        text-align: center !important;
+      }
+
+      .floating-book {
+        bottom: 16px !important;
+        right: 16px !important;
+        padding: 10px 18px !important;
+        font-size: 0.85rem !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -1024,9 +1230,9 @@
 <nav class="navbar">
   <div class="container nav-container">
     <div class="logo">
-      <!-- <h1>CHICAGO DIAMOND CAR</h1>
-      <p>✦ LUXURY CHAUFFEUR SERVICE ✦</p> -->
-      <img src="logo.png" alt="Chicago Diamond Car Logo" style="height: 100px;">
+      <a href="index.html" style="text-decoration: none; display: inline-block;">
+        <img src="logo.png" alt="Chicago Diamond Car Logo" style="height: 100px;">
+      </a>
     </div>
     <div class="mobile-menu" id="mobileMenuBtn">
       <i class="fas fa-bars"></i>
@@ -1291,6 +1497,56 @@
   </div>
 </section>
 
+<!-- Featured Luxury Rides Section -->
+<section class="featured-luxury-rides" style="background: #F8FAFC; padding: 70px 0; border-top: 1px solid rgba(15, 23, 42, 0.06);">
+  <div class="container">
+    <div style="text-align: center; max-width: 700px; margin: 0 auto 40px;">
+      <span style="color: var(--diamond-gold); font-weight: 700; letter-spacing: 2px; font-size: 0.85rem; text-transform: uppercase;"><i class="fas fa-gem"></i> Diamond Standard Fleet</span>
+      <h2 style="font-size: 2.2rem; margin-top: 8px; color: #0F172A;">Featured <span>Luxury Rides</span></h2>
+      <p style="color: #64748B; font-size: 1.05rem;">Choose from our meticulously maintained fleet of premium vehicles for your Chicago journey.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 960px; margin: 0 auto;">
+      
+      <!-- Luxury SUV -->
+      <div class="fleet-card" style="background: #FFFFFF; border-radius: 24px; overflow: hidden; border: 1px solid rgba(197, 160, 34, 0.25); box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: transform 0.3s ease, border-color 0.3s ease; text-align: left;" onmouseover="this.style.transform='translateY(-6px)'; this.style.borderColor='var(--diamond-gold)';" onmouseout="this.style.transform='none'; this.style.borderColor='rgba(197, 160, 34, 0.25)';">
+        <div style="height: 220px; overflow: hidden; background: #FFFFFF; display: flex; align-items: center; justify-content: center; padding: 20px;">
+          <img src="images/cadillac-escalade.png" alt="Luxury SUV Chicago - Cadillac Escalade ESV" style="max-width: 100%; max-height: 100%; object-fit: contain; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.04)';" onmouseout="this.style.transform='none';">
+        </div>
+        <div style="padding: 26px 24px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <h3 style="font-size: 1.35rem; color: #0F172A; margin: 0;">Luxury SUV</h3>
+            <span style="background: rgba(197, 160, 34, 0.12); color: #C5A022; font-size: 0.8rem; font-weight: 700; padding: 4px 10px; border-radius: 20px;">1–7 Passengers</span>
+          </div>
+          <p style="color: #475569; font-size: 0.96rem; line-height: 1.6; margin-bottom: 22px;">Premium space and comfort for families, executives &amp; VIP travel.</p>
+          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="black-suvs.html" class="btn" style="padding: 10px 22px; font-size: 0.9rem;">Explore SUV</a>
+            <a href="tel:+17737393178" class="btn btn-outline open-booking-modal" style="padding: 10px 22px; font-size: 0.9rem;">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Luxury Sedan -->
+      <div class="fleet-card" style="background: #FFFFFF; border-radius: 24px; overflow: hidden; border: 1px solid rgba(197, 160, 34, 0.25); box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: transform 0.3s ease, border-color 0.3s ease; text-align: left;" onmouseover="this.style.transform='translateY(-6px)'; this.style.borderColor='var(--diamond-gold)';" onmouseout="this.style.transform='none'; this.style.borderColor='rgba(197, 160, 34, 0.25)';">
+        <div style="height: 220px; overflow: hidden; background: #FFFFFF; display: flex; align-items: center; justify-content: center; padding: 20px;">
+          <img src="images/cadillac-xt6.png" alt="Luxury Sedan Chicago - Cadillac XT6" style="max-width: 100%; max-height: 100%; object-fit: contain; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.04)';" onmouseout="this.style.transform='none';">
+        </div>
+        <div style="padding: 26px 24px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <h3 style="font-size: 1.35rem; color: #0F172A; margin: 0;">Luxury Sedan</h3>
+            <span style="background: rgba(197, 160, 34, 0.12); color: #C5A022; font-size: 0.8rem; font-weight: 700; padding: 4px 10px; border-radius: 20px;">1–3 Passengers</span>
+          </div>
+          <p style="color: #475569; font-size: 0.96rem; line-height: 1.6; margin-bottom: 22px;">First-class comfort and refined style for business meetings &amp; special occasions.</p>
+          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="black-sedans.html" class="btn" style="padding: 10px 22px; font-size: 0.9rem;">Explore Sedan</a>
+            <a href="tel:+17737393178" class="btn btn-outline open-booking-modal" style="padding: 10px 22px; font-size: 0.9rem;">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- Contact / Footer -->
 <footer id="contact">
   <div class="container footer-grid">
@@ -1374,65 +1630,7 @@
 <a href="tel:+17737393178" class="floating-book"><i class="fas fa-gem"></i> Book Now</a>
 
 <script>
-  // Mobile menu toggle
-  const menuBtn = document.getElementById('mobileMenuBtn');
-  const navLinksEl = document.getElementById('navLinks');
   
-  if (menuBtn) {
-    menuBtn.addEventListener('click', () => {
-      navLinksEl.classList.toggle('show');
-    });
-  }
-
-  // Mobile submenu toggle
-  const hasSubmenuItems = document.querySelectorAll('.has-submenu > a');
-  hasSubmenuItems.forEach(item => {
-    item.addEventListener('click', function(e) {
-      if (window.innerWidth <= 900) {
-        e.preventDefault();
-        const parent = this.parentElement;
-        const submenu = parent.querySelector('.submenu');
-        
-        document.querySelectorAll('.has-submenu').forEach(other => {
-          if (other !== parent && other.classList.contains('active-mobile')) {
-            other.classList.remove('active-mobile');
-            const otherSubmenu = other.querySelector('.submenu');
-            if (otherSubmenu) otherSubmenu.classList.remove('show-mobile');
-          }
-        });
-  // Mobile menu toggle
-  const menuBtn = document.getElementById('mobileMenuBtn');
-  const navLinks = document.getElementById('navLinks');
-  if(menuBtn) {
-    menuBtn.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
-    });
-  }
-
-  // Mobile submenu toggle
-  const hasSubmenuItems = document.querySelectorAll('.has-submenu > a');
-  hasSubmenuItems.forEach(item => {
-    item.addEventListener('click', function(e) {
-      if (window.innerWidth <= 900) {
-        e.preventDefault();
-        const parent = this.parentElement;
-        const submenu = parent.querySelector('.submenu');
-        
-        document.querySelectorAll('.has-submenu').forEach(other => {
-          if (other !== parent && other.classList.contains('active-mobile')) {
-            other.classList.remove('active-mobile');
-            const otherSubmenu = other.querySelector('.submenu');
-            if (otherSubmenu) otherSubmenu.classList.remove('show-mobile');
-          }
-        });
-        
-        parent.classList.toggle('active-mobile');
-        if (submenu) {
-          submenu.classList.toggle('show-mobile');
-        }
-      }
-    });
-  });
 
   // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -1460,14 +1658,7 @@
     }
   });
 
-  // Close mobile menu when clicking outside
-  document.addEventListener('click', function(e) {
-    if (window.innerWidth <= 900) {
-      if (!e.target.closest('.nav-container') && !e.target.closest('.mobile-menu')) {
-        navLinks.classList.remove('show');
-      }
-    }
-  });
+  
 
   // Booking Concierge Modal handlers
   function initBookingModal() {
@@ -1501,6 +1692,127 @@
   } else {
     initBookingModal();
   }
+
+
+  // Universal Mobile Navigation & Submenu Toggle Handler
+  (function() {
+    function setupMobileNav() {
+      const menuBtn = document.getElementById('mobileMenuBtn');
+      const navLinks = document.getElementById('navLinks');
+      if (!menuBtn || !navLinks) return;
+
+      if (menuBtn.dataset.navInit === 'true') return;
+      menuBtn.dataset.navInit = 'true';
+
+      const menuIcon = menuBtn.querySelector('i');
+
+      function toggleMenu(e) {
+        if (e) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
+        const isOpen = navLinks.classList.toggle('show');
+        menuBtn.classList.toggle('active', isOpen);
+        if (menuIcon) {
+          if (isOpen) {
+            menuIcon.classList.remove('fa-bars');
+            menuIcon.classList.add('fa-times');
+          } else {
+            menuIcon.classList.remove('fa-times');
+            menuIcon.classList.add('fa-bars');
+          }
+        }
+      }
+
+      function closeMenu() {
+        navLinks.classList.remove('show');
+        menuBtn.classList.remove('active');
+        if (menuIcon) {
+          menuIcon.classList.remove('fa-times');
+          menuIcon.classList.add('fa-bars');
+        }
+        navLinks.querySelectorAll('.has-submenu').forEach(item => {
+          item.classList.remove('active-mobile');
+          const submenu = item.querySelector('.submenu');
+          if (submenu) submenu.classList.remove('show-mobile');
+        });
+      }
+
+      menuBtn.addEventListener('click', toggleMenu);
+
+      // Submenu accordion toggle on mobile
+      const submenuParents = navLinks.querySelectorAll('.has-submenu');
+      submenuParents.forEach(parent => {
+        const parentLink = parent.querySelector(':scope > a');
+        if (!parentLink) return;
+
+        parentLink.addEventListener('click', function(e) {
+          if (window.innerWidth <= 900) {
+            e.preventDefault();
+            e.stopPropagation();
+            const submenu = parent.querySelector('.submenu');
+            const isCurrentlyActive = parent.classList.contains('active-mobile');
+
+            // Close other open submenus
+            submenuParents.forEach(other => {
+              if (other !== parent) {
+                other.classList.remove('active-mobile');
+                const otherSub = other.querySelector('.submenu');
+                if (otherSub) otherSub.classList.remove('show-mobile');
+              }
+            });
+
+            // Toggle clicked submenu
+            if (isCurrentlyActive) {
+              parent.classList.remove('active-mobile');
+              if (submenu) submenu.classList.remove('show-mobile');
+            } else {
+              parent.classList.add('active-mobile');
+              if (submenu) submenu.classList.add('show-mobile');
+            }
+          }
+        });
+      });
+
+      // Close when clicking outside
+      document.addEventListener('click', function(e) {
+        if (window.innerWidth <= 900 && navLinks.classList.contains('show')) {
+          if (!e.target.closest('.nav-container') && !e.target.closest('#mobileMenuBtn')) {
+            closeMenu();
+          }
+        }
+      });
+
+      // Close on Escape key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && navLinks.classList.contains('show')) {
+          closeMenu();
+        }
+      });
+
+      // Close when resizing to desktop
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 900 && navLinks.classList.contains('show')) {
+          closeMenu();
+        }
+      });
+
+      // Close menu when clicking regular navigation links
+      navLinks.querySelectorAll('a:not(.has-submenu > a)').forEach(link => {
+        link.addEventListener('click', function() {
+          if (window.innerWidth <= 900) {
+            closeMenu();
+          }
+        });
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', setupMobileNav);
+    } else {
+      setupMobileNav();
+    }
+  })();
 
 </script>
 </body>
