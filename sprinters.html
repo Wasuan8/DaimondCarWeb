@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Executive Mercedes Sprinter Limo Chicago | Group Transport | Chicago Diamond Car</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <meta name="description" content="Luxury Mercedes Sprinter limo and executive van service in Chicago. High-roof Sprinters for up to 14 passengers. Ideal for corporate groups, events & airport transfers.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background-color: #FFFFFF; color: #0F172A; scroll-behavior: smooth; }
+    :root { 
+      --diamond-gold: #C5A022; 
+      --gold-hover: #A6861C;
+      --deep-charcoal: #F8FAFC; 
+      --champagne-white: #0F172A;
+      --transition: all 0.3s ease; 
+    }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+    section { padding: 80px 0; }
+    h1, h2 { font-weight: 700; letter-spacing: -0.02em; }
+    h1 { font-size: 3.2rem; line-height: 1.2; margin-bottom: 1.5rem; }
+    h1 span, h2 span { color: var(--diamond-gold); }
+    .btn { display: inline-block; background: var(--diamond-gold); color: #000; font-weight: 700; padding: 14px 36px; border-radius: 40px; text-decoration: none; transition: var(--transition); border: none; cursor: pointer; }
+    .btn:hover { background: var(--gold-hover); transform: translateY(-3px); }
+
+    /* ===== NAVBAR (DARK THEME) ===== */
+    .navbar {
+      background: rgba(15, 23, 42, 0.96) !important;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(197, 160, 34, 0.25);
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.35);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo h1 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #FFFFFF 30%, #E2B734 80%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 0;
+      letter-spacing: -0.5px;
+    }
+
+    .logo p {
+      font-size: 0.65rem;
+      letter-spacing: 1.5px;
+      color: #E2B734;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+
+    .nav-links li {
+      position: relative;
+    }
+
+    .nav-links a {
+      color: #F8FAFC !important;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: var(--transition);
+      padding: 8px 0;
+      position: relative;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--diamond-gold) !important;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--diamond-gold);
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a.active::after {
+      width: 100%;
+    }
+
+    .nav-links a[href^="tel:"] {
+      background: var(--diamond-gold) !important;
+      color: #000000 !important;
+      padding: 10px 20px !important;
+      border-radius: 40px;
+      font-weight: 600;
+      border: 1px solid transparent;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 15px rgba(197, 160, 34, 0.3);
+    }
+
+    .nav-links a[href^="tel:"]:hover {
+      background: transparent !important;
+      color: var(--diamond-gold) !important;
+      border-color: var(--diamond-gold);
+    }
+
+    .nav-links a[href^="tel:"]::after {
+      display: none;
+    }
+
+    .nav-links a[href^="tel:"] i {
+      display: inline-block;
+      transform: scaleX(-1);
+    }
+
+    .mobile-menu {
+      display: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: var(--diamond-gold);
+      background: none;
+      border: 1px solid var(--diamond-gold);
+      padding: 6px 14px;
+      border-radius: 8px;
+    }
+
+    /* Submenus Desktop */
+    .nav-links .has-submenu {
+      position: relative;
+    }
+
+    .nav-links .has-submenu > a {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .nav-links .has-submenu > a::after {
+      content: '\f107';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      font-size: 0.8rem;
+      margin-left: 4px;
+      transition: transform 0.3s ease;
+      color: var(--diamond-gold);
+      position: static;
+      width: auto;
+      height: auto;
+      background: none;
+    }
+
+    .nav-links .has-submenu:hover > a::after {
+      transform: rotate(180deg);
+    }
+
+    .nav-links .submenu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 250px;
+      background: #0F172A !important;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(197, 160, 34, 0.3) !important;
+      border-radius: 12px;
+      padding: 12px 0;
+      margin-top: 15px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6) !important;
+      z-index: 1001;
+      list-style: none;
+    }
+
+    .nav-links .submenu::before {
+      content: '';
+      position: absolute;
+      top: -1px;
+      left: 20px;
+      right: 20px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--diamond-gold), transparent);
+    }
+
+    .nav-links .submenu::after {
+      content: '';
+      position: absolute;
+      top: -8px;
+      left: 30px;
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 8px solid #0F172A !important;
+    }
+
+    .nav-links .submenu li {
+      display: block;
+      width: 100%;
+    }
+
+    .nav-links .submenu li a {
+      display: block;
+      padding: 12px 24px;
+      color: #E2E8F0 !important;
+      font-size: 0.9rem;
+      font-weight: 400;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      white-space: nowrap;
+    }
+
+    .nav-links .submenu li:last-child a {
+      border-bottom: none;
+    }
+
+    .nav-links .submenu li a:hover {
+      background: linear-gradient(90deg, rgba(197, 160, 34, 0.2) 0%, transparent 100%) !important;
+      color: var(--diamond-gold) !important;
+      padding-left: 32px;
+    }
+
+    .nav-links .has-submenu:hover .submenu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .hero { background: linear-gradient(115deg, #FFFFFF 40%, #F8FAFC 100%); padding: 80px 0; }
+    .hero-grid { display: flex; flex-wrap: wrap; gap: 48px; align-items: center; }
+    .vehicle-card { background: var(--deep-charcoal); border-radius: 32px; overflow: hidden; border: 1px solid rgba(197, 160, 34, 0.15); transition: var(--transition); padding: 30px; margin-top: 40px; }
+    .vehicle-card:hover { transform: translateY(-8px); border-color: var(--diamond-gold); }
+
+    /* Footer */
+    footer {
+      background: #F1F5F9;
+      border-top: 1px solid rgba(197, 160, 34, 0.15);
+      padding: 60px 0 30px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-col h4 {
+      color: var(--diamond-gold);
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      letter-spacing: -0.01em;
+    }
+
+    .footer-col > a {
+      display: inline-block;
+      width: fit-content;
+      color: #475569;
+      text-decoration: none;
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+      transition: var(--transition);
+    }
+
+    .footer-col > a:hover {
+      color: var(--diamond-gold);
+      transform: translateX(4px);
+    }
+
+    .footer-col p {
+      display: flex;
+      align-items: center;
+      color: #475569;
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .footer-col p i {
+      color: var(--diamond-gold);
+      width: 20px;
+      margin-right: 12px;
+      text-align: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    .footer-col p a {
+      color: #475569;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .footer-col p a:hover {
+      color: var(--diamond-gold);
+    }
+
+    .footer-col .social-icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      margin-top: 4px;
+    }
+
+    .footer-col .social-icons a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      background: #FFFFFF;
+      border: 1px solid rgba(197, 160, 34, 0.25);
+      border-radius: 50%;
+      color: #0F172A;
+      font-size: 1.05rem;
+      margin: 0;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
+      transition: var(--transition);
+    }
+
+    .footer-col .social-icons a:hover {
+      background: var(--diamond-gold);
+      color: #000000;
+      border-color: var(--diamond-gold);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(197, 160, 34, 0.35);
+    }
+
+    .copyright {
+      text-align: center;
+      padding-top: 28px;
+      border-top: 1px solid rgba(15, 23, 42, 0.08);
+      font-size: 0.88rem;
+      color: #64748B;
+      line-height: 1.6;
+    }
+
+    .floating-book {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--diamond-gold);
+      color: black;
+      padding: 14px 28px;
+      border-radius: 60px;
+      font-weight: bold;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      z-index: 99;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .floating-book:hover {
+      transform: translateY(-3px);
+      background: var(--gold-hover);
+    }
+
+    @media (max-width: 900px) {
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 36px 30px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      footer {
+        padding: 48px 0 28px;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        margin-bottom: 28px;
+      }
+      .footer-col .social-icons {
+        gap: 10px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .nav-links { display: none !important; width: 100% !important; flex-direction: column !important; background: #0F172A !important; margin-top: 16px; border-radius: 12px; border: 1px solid rgba(197, 160, 34, 0.3) !important; box-shadow: 0 10px 30px rgba(0,0,0,0.5) !important; }
+      .nav-links.show { display: flex; }
+      .mobile-menu { display: block; }
+      .nav-links .submenu { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; max-height: 0; overflow: hidden; }
+      .nav-links .submenu.show-mobile { max-height: 600px; }
+      .hero-grid { flex-direction: column; text-align: center; }
+    }
+  
+    /* ===== LUXURY BOOKING MODAL & SOCIAL STYLES ===== */
+    .booking-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 99999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .booking-modal-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    .booking-modal-content {
+      position: relative;
+      background: #0F172A;
+      border: 1px solid rgba(197, 160, 34, 0.4);
+      border-radius: 24px;
+      padding: 36px 32px;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+      z-index: 2;
+      text-align: center;
+      color: #F8FAFC;
+    }
+    .booking-modal-close {
+      position: absolute;
+      top: 16px;
+      right: 20px;
+      background: transparent;
+      border: none;
+      color: #94A3B8;
+      font-size: 2rem;
+      cursor: pointer;
+      line-height: 1;
+      transition: color 0.2s ease;
+    }
+    .booking-modal-close:hover {
+      color: var(--diamond-gold);
+    }
+    .booking-modal-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(197, 160, 34, 0.15);
+      border: 1px solid rgba(197, 160, 34, 0.4);
+      color: var(--diamond-gold);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      padding: 6px 14px;
+      border-radius: 30px;
+      margin-bottom: 14px;
+    }
+    .booking-modal-header h3 {
+      font-size: 1.5rem;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+    .booking-modal-header p {
+      color: #94A3B8;
+      font-size: 0.95rem;
+      margin-bottom: 24px;
+    }
+    .booking-modal-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .modal-action-btn {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 20px;
+      border-radius: 16px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      text-align: left;
+    }
+    .modal-action-btn i {
+      font-size: 1.6rem;
+      width: 36px;
+      text-align: center;
+    }
+    .modal-action-btn.btn-call i {
+      transform: scaleX(-1);
+    }
+    .modal-action-btn .btn-text {
+      display: flex;
+      flex-direction: column;
+    }
+    .modal-action-btn .btn-title {
+      font-weight: 700;
+      font-size: 1rem;
+    }
+    .modal-action-btn .btn-desc {
+      font-size: 0.8rem;
+      opacity: 0.85;
+    }
+    .modal-action-btn.btn-call {
+      background: var(--diamond-gold);
+      color: #000000;
+      border: 1px solid var(--diamond-gold);
+    }
+    .modal-action-btn.btn-call:hover {
+      background: var(--gold-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(197, 160, 34, 0.4);
+    }
+    .modal-action-btn.btn-whatsapp {
+      background: #25D366;
+      color: #FFFFFF;
+      border: 1px solid #25D366;
+    }
+    .modal-action-btn.btn-whatsapp:hover {
+      background: #1EBE5D;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+    }
+    .modal-action-btn.btn-email {
+      background: rgba(255, 255, 255, 0.06);
+      color: #F8FAFC;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .modal-action-btn.btn-email:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: var(--diamond-gold);
+      color: var(--diamond-gold);
+      transform: translateY(-2px);
+    }
+    .social-icons a[aria-label="Facebook"]:hover { background: #1877F2 !important; color: #FFFFFF !important; }
+    .social-icons a[aria-label="Instagram"]:hover { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important; color: #FFFFFF !important; }
+    .social-icons a[aria-label="WhatsApp"]:hover { background: #25D366 !important; color: #FFFFFF !important; }
+    .social-icons a[aria-label="TikTok"]:hover { background: #000000 !important; color: #FFFFFF !important; border: 1px solid rgba(255,255,255,0.3); }
+    .social-icons a[aria-label="Yelp"]:hover { background: #D32323 !important; color: #FFFFFF !important; }
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container nav-container">
+    <div class="logo">
+      <a href="index.html" style="text-decoration: none;">
+        <img src="logo.png" alt="Chicago Diamond Car Logo" style="height: 100px;">
+      </a>
+    </div>
+    <div class="mobile-menu" id="mobileMenuBtn">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li class="has-submenu">
+        <a href="fleets.html">Fleets</a>
+        <ul class="submenu">
+          <li><a href="black-sedans.html">Black Sedans</a></li>
+          <li><a href="black-suvs.html">Black SUVs</a></li>
+          <li><a href="sprinters.html">Executive Sprinters</a></li>
+          <li><a href="stretch-limo.html">Stretch Limo</a></li>
+          <li><a href="executive-ride.html">Executive Ride</a></li>
+          <li><a href="party-bus.html">Party Bus</a></li>
+        </ul>
+      </li>
+      <li class="has-submenu">
+        <a href="services.html">Services</a>
+        <ul class="submenu">
+          <li><a href="airport-transfers.html">Airport Transfers</a></li>
+          <li><a href="corporate-travel.html">Corporate Travel</a></li>
+          <li><a href="weddings-events.html">Weddings & Events</a></li>
+          <li><a href="hourly-charter.html">Hourly Charter</a></li>
+          <li><a href="point-to-point.html">Point-to-Point</a></li>
+          <li><a href="group-transportation.html">Group Transportation</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="privacy-policy.html">Privacy & Policy</a></li>
+      <li><a href="tel:+17737393178"><i class="fas fa-phone-alt"></i> Call Now</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div style="flex: 1.2;">
+      <div style="color:var(--diamond-gold); font-weight:600; letter-spacing:2px; margin-bottom:16px;"><i class="fas fa-gem"></i> THE ULTIMATE GROUP EXPERIENCE</div>
+      <h1>Mercedes <span>Executive Sprinters</span></h1>
+      <p style="font-size:1.2rem; margin-bottom:24px;">The pinnacle of group travel. Our Mercedes-Benz Sprinters offer high-roof comfort, executive seating, and state-of-the-art amenities for up to 14 passengers.</p>
+      <a href="contact.html" class="btn">Request a Sprinter Quote</a>
+    </div>
+    <div style="flex: 0.8; text-align:center;">
+      <img src="images/mercedes-sprinter.png" alt="Mercedes-Benz Executive Sprinter Chicago" style="width:100%; max-width:500px; border-radius:24px; box-shadow: 0 20px 60px rgba(0,0,0,0.15);">
+    </div>
+  </div>
+</section>
+
+<section style="background: #F8FAFC;">
+  <div class="container">
+    <h2>Sprinter <span>Configurations</span></h2>
+    <div class="vehicle-card" style="overflow:hidden; padding:0;">
+      <img src="images/mercedes-sprinter.png" alt="Mercedes Executive Sprinter Van Chicago" style="width:100%; height:300px; object-fit:cover; object-position:center; display:block; border-radius:32px 32px 0 0;">
+      <div style="padding:30px;">
+      <h3>14-Passenger Executive Van</h3>
+      <p>Ideal for corporate teams, site visits, and large families. Features high-roof clearance and ample luggage space.</p>
+      <ul style="list-style:none; margin:20px 0; display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:12px;">
+        <li><i class="fas fa-check-circle" style="color:var(--diamond-gold);"></i> Forward Facing Seats</li>
+        <li><i class="fas fa-check-circle" style="color:var(--diamond-gold);"></i> Extra Large Luggage Area</li>
+        <li><i class="fas fa-check-circle" style="color:var(--diamond-gold);"></i> Privacy Shades</li>
+        <li><i class="fas fa-check-circle" style="color:var(--diamond-gold);"></i> Bluetooth Audio</li>
+      </ul>
+      <a href="contact.html" class="btn">Book Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact / Footer -->
+<footer id="contact">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="black-sedans.html">Black Sedans</a>
+      <a href="black-suvs.html">Black SUVs</a>
+      <a href="sprinters.html">Executive Sprinters</a>
+      <a href="stretch-limo.html">Stretch Limo</a>
+      <a href="executive-ride.html">Executive Ride</a>
+      <a href="party-bus.html">Party Bus</a>
+    </div>
+    <div class="footer-col">
+      <h4>Our Services</h4>
+      <a href="airport-transfers.html">Airport Transfers</a>
+      <a href="corporate-travel.html">Corporate Travel</a>
+      <a href="weddings-events.html">Weddings & Events</a>
+      <a href="hourly-charter.html">Hourly Charter</a>
+      <a href="point-to-point.html">Point-to-Point</a>
+      <a href="group-transportation.html">Group Transportation</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:info@chicagodiamondcar.com">info@chicagodiamondcar.com</a></p>
+      <p><i class="fas fa-phone-alt"></i> <a href="tel:+17737393178">+1 (773) 739-3178</a></p>
+      <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/17737393178" target="_blank" rel="noopener noreferrer">+1 (773) 739-3178 (WhatsApp)</a></p>
+      <p><i class="fas fa-phone"></i> <a href="tel:+13124018409">+1 (312) 401-8409</a></p>
+    </div>
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/chicagodiamondcars" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/chicagodiamondcar" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/17737393178" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.tiktok.com/@chicagodiamondcar" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.yelp.com" target="_blank" rel="noopener noreferrer" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="copyright container">
+    © 2026 Chicago Diamond Car. All rights reserved. Luxury Redefined. | Developed by <a href="https://amnxtdigital.com" target="_blank" rel="noopener noreferrer" style="color:var(--diamond-gold); text-decoration:none;">amnxtdigital.com</a>
+  </div>
+</footer>
+
+<!-- Luxury Booking Concierge Modal -->
+<div id="bookingModal" class="booking-modal" style="display:none;">
+  <div class="booking-modal-overlay"></div>
+  <div class="booking-modal-content">
+    <button class="booking-modal-close" aria-label="Close Modal">&times;</button>
+    <div class="booking-modal-header">
+      <div class="booking-modal-badge"><i class="fas fa-gem"></i> VIP CONCIERGE</div>
+      <h3>Reserve Your Luxury Experience</h3>
+      <p>Connect instantly with our 24/7 Chicago Diamond dispatch team.</p>
+    </div>
+    <div class="booking-modal-actions">
+      <a href="tel:+17737393178" class="modal-action-btn btn-call">
+        <i class="fas fa-phone-alt"></i>
+        <div class="btn-text">
+          <span class="btn-title">Direct Phone Call</span>
+          <span class="btn-desc">+1 (773) 739-3178 • Immediate 24/7 Dispatch</span>
+        </div>
+      </a>
+      <a href="https://wa.me/17737393178?text=Hello%20Chicago%20Diamond%20Car%2C%20I%20would%20like%20to%20reserve%20a%20luxury%20ride." target="_blank" rel="noopener noreferrer" class="modal-action-btn btn-whatsapp">
+        <i class="fab fa-whatsapp"></i>
+        <div class="btn-text">
+          <span class="btn-title">WhatsApp Booking</span>
+          <span class="btn-desc">+1 (773) 739-3178 • Instant Concierge Chat</span>
+        </div>
+      </a>
+      <a href="mailto:info@chicagodiamondcar.com?subject=Chauffeur%20Reservation%20Inquiry" class="modal-action-btn btn-email">
+        <i class="fas fa-envelope"></i>
+        <div class="btn-text">
+          <span class="btn-title">Email Reservation</span>
+          <span class="btn-desc">info@chicagodiamondcar.com • Prompt Confirmation</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<a href="tel:+17737393178" class="floating-book"><i class="fas fa-gem"></i> Book Now</a>
+
+<script>
+  const menuBtn = document.getElementById('mobileMenuBtn');
+  const navLinks = document.getElementById('navLinks');
+  if(menuBtn) {
+    menuBtn.addEventListener('click', () => { navLinks.classList.toggle('show'); });
+  }
+
+  const hasSubmenuItems = document.querySelectorAll('.has-submenu > a');
+  hasSubmenuItems.forEach(item => {
+    item.addEventListener('click', function(e) {
+      if (window.innerWidth <= 900) {
+        e.preventDefault();
+        const parent = this.parentElement;
+        const submenu = parent.querySelector('.submenu');
+        parent.classList.toggle('active-mobile');
+        if (submenu) { submenu.classList.toggle('show-mobile'); }
+      }
+    });
+  });
+
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (navbar) {
+      if (window.scrollY > 50) {
+        navbar.style.background = 'rgba(15, 23, 42, 0.98)';
+      } else {
+        navbar.style.background = 'rgba(15, 23, 42, 0.96)';
+      }
+    }
+  });
+
+  // Booking Concierge Modal handlers
+  function initBookingModal() {
+    const modal = document.getElementById('bookingModal');
+    if (!modal) return;
+    const closeBtn = modal.querySelector('.booking-modal-close');
+    const overlay = modal.querySelector('.booking-modal-overlay');
+
+    function openModal(e) {
+      if (e) e.preventDefault();
+      modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modal.style.display = 'none';
+      document.body.style.overflow = '';
+    }
+
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (overlay) overlay.addEventListener('click', closeModal);
+
+    document.querySelectorAll('.open-booking-modal, a[href="#booking"], #heroBookBtn, .floating-book').forEach(btn => {
+      btn.addEventListener('click', openModal);
+    });
+
+    window.openBookingModal = openModal;
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initBookingModal);
+  } else {
+    initBookingModal();
+  }
+
+</script>
+
+</body>
+</html>
